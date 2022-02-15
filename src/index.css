@@ -29,7 +29,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 a {
   text-decoration: none;
-  color: white;
+  color: #ffd6c4;
 }
 
 /*header es el contenedor del menu*/
@@ -41,7 +41,6 @@ a {
   height: 80px;
   top: 0;
   left: 0;
-  opacity: 90%;
   z-index: 1000;
 }
 
@@ -86,7 +85,6 @@ a {
 
 .nav-menu-link:hover {
   color: #30261d;
-  background-color: #ffd6c4;
   transition: 0.5s;
 }
 
@@ -123,13 +121,11 @@ a {
 
 .nav-logo:hover {
   color: #ffd6c4;
+  transition: 0.5s;
+  background-color: transparent;
 }
 
 @media (max-width: 768px) {
-
-  .header {
-    opacity: 100%;
-  }
 
   .nav-menu {
     flex-direction: column;

@@ -4,10 +4,11 @@
     color: #ffd6c4;
     font-size: 1.2rem;
     text-align: center;
+    transition: transform .2s;
 }
 
 .movieCard:hover {
-    opacity: 80%;
+    transform: scale(1.1);
 }
 
 .movieImg {

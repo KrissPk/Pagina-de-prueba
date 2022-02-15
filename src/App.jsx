@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { MoviesDetails } from "./pages/MoviesDetails";
 import { LandingPage } from "./pages/LandingPage";
+import { Series } from "./pages/Series";
+import { Usuario } from "./pages/Usuario";
 import { Search } from "./components/Search";
 
 export function App() {
@@ -29,7 +31,7 @@ export function App() {
             <Search/>
             </li>
             <li className="nav-menu-item">
-              <Link to="/">
+              <Link to="/usuario">
                 <i className="fas fa-user nav-avatar"></i>
               </Link>
             </li>
@@ -41,6 +43,8 @@ export function App() {
         <Routes>
           <Route exact path="/movie/:movieId" element={<MoviesDetails/>}/>
           <Route exact path="/peliculas" element={<LandingPage/>}/>
+          <Route exact path="/series" element={<Series/>}/>
+          <Route exact path="/usuario" element={<Usuario/>}/>
           <Route path="/" element={<LandingPage/>}/>
         </Routes>
       </main>
