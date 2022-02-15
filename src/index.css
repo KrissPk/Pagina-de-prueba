@@ -126,6 +126,9 @@ a {
 }
 
 @media (max-width: 768px) {
+  .header{
+    opacity: 90%;
+  }
 
   .nav-menu {
     flex-direction: column;
