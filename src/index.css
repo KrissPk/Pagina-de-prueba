@@ -7,7 +7,7 @@ body {
   font-family: sans-serif;
   background-color: #30261d;
   padding: 90px 10px 0px;
-
+  overflow: overlay;
 }
 
 body::-webkit-scrollbar {
