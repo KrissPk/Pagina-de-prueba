@@ -19,12 +19,14 @@ export function Search() {
         <input
           className={styles.searchInput}
           type="text"
-          value={search}
+          value={search ?? ""}
           placeholder="Title"
           aria-label="Search"
           onChange={(e) => {
             const value = e.target.value;
-            navigate("/?search=" + value);
+
+            setQuery({ search: value });
+            //navigate("/?search=" + value);
           }}
         />
         <FaSearch size={20} className={styles.searchButton} />
